@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git scm update') {
       steps {
-        git url: 'https://github.com/ojwsakin/jenkins_practice', branch: 'main'
+        git url: 'https://github.com/ojwsakin/jenkins_practice.git', branch: 'main'
       }
     }
     stage('docker build') {
